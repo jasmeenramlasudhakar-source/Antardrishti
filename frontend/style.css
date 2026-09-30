@@ -49,3 +49,29 @@ p {
     font-size: 32px;
     font-weight: bold;
     margin-top
+.card {
+  background: white;
+  color: #222;
+  border-radius: 18px;
+  padding: 25px;
+  min-width: 180px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.value {
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.status {
+  margin-top: 30px;
+  padding: 15px;
+  border-radius: 12px;
+  font-weight: bold;
+}
