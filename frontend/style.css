@@ -1,32 +1,48 @@
-<!DOCTYPE html>
-<html lang="en">
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f7fb;
+    margin: 0;
+    padding: 40px;
+    text-align: center;
+}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+h1 {
+    font-size: 42px;
+    margin-bottom: 5px;
+}
 
-    <title>Antardrishti | Silent Health Vision</title>
-</head>
+h2 {
+    font-weight: normal;
+}
 
-<body>
+.dashboard {
+    max-width: 900px;
+    margin: 40px auto;
+}
 
-    <h1>Antardrishti</h1>
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
 
-    <h2>Silent Health Vision</h2>
+.card {
+    background: white;
+    padding: 25px;
+    width: 200px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
 
-    <p>
-        A smart health-monitoring prototype that silently observes
-        health signals and provides early health awareness.
-    </p>
+.value {
+    font-size: 30px;
+    font-weight: bold;
+}
 
-    <h3>Health Dashboard</h3>
-
-    <p>❤️ Heart Rate: -- BPM</p>
-    <p>🫁 SpO₂: -- %</p>
-    <p>🌡️ Temperature: -- °C</p>
-
-    <p>Status: Waiting for sensor data...</p>
-
-</body>
-
-</html>
+.status {
+    margin-top: 30px;
+    padding: 20px;
+    background: white;
+    border-radius: 15px;
+}
