@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Antardrishti | Silent Health Vision</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -20,13 +21,35 @@
         health signals and provides early health awareness.
     </p>
 
-    <h3>Health Dashboard</h3>
+    <div class="dashboard">
 
-    <p>❤️ Heart Rate: -- BPM</p>
-    <p>🫁 SpO₂: -- %</p>
-    <p>🌡️ Temperature: -- °C</p>
+        <h3>Health Dashboard</h3>
 
-    <p>Status: Waiting for sensor data...</p>
+        <div class="cards">
+
+            <div class="card">
+                <h3>❤️ Heart Rate</h3>
+                <p class="value">72 BPM</p>
+            </div>
+
+            <div class="card">
+                <h3>🫁 SpO₂</h3>
+                <p class="value">98%</p>
+            </div>
+
+            <div class="card">
+                <h3>🌡️ Temperature</h3>
+                <p class="value">36.7°C</p>
+            </div>
+
+        </div>
+
+        <div class="status">
+            <h3>Health Status</h3>
+            <p>🟢 Normal — No unusual readings detected.</p>
+        </div>
+
+    </div>
 
 </body>
 
