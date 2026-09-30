@@ -52,10 +52,19 @@
     </div>
     <script>
 function updateHealth() {
-    let heartRate = Math.floor(65 + Math.random() * 25);
-    let spo2 = Math.floor(96 + Math.random() * 4);
-    let temperature = (36.4 + Math.random() * 0.8).toFixed(1);
+let alertMode = Math.random() < 0.25;
 
+let heartRate = alertMode
+  ? Math.floor(105 + Math.random() * 15)
+  : Math.floor(65 + Math.random() * 25);
+
+let spo2 = alertMode
+  ? Math.floor(90 + Math.random() * 5)
+  : Math.floor(96 + Math.random() * 3);
+
+let temperature = alertMode
+  ? (38.1 + Math.random() * 0.9).toFixed(1)
+  : (36.5 + Math.random() * 1).toFixed(1);
     document.getElementById("heartRate").innerText = heartRate + " BPM";
     document.getElementById("spo2").innerText = spo2 + "%";
     document.getElementById("temperature").innerText = temperature + "°C";
